@@ -21,9 +21,37 @@ let eqArrays = function(array1, array2) { // create a function that takes 2 arra
     }
   
   };
-   
-  
-  
-  // TEST CODE
-  assertArraysEqual([1,2,3], [1,2,3]);
-  assertArraysEqual([1],[3]);
+    
+    
+    const letterPositions = function(sentence) {
+    const results = {};
+    for(let i = 0; i < sentence.length; i++ ) {
+        if(results[sentence[i]]) {
+           results[sentence[i]] .push(i)
+        } else {
+        console.log(sentence[i])
+        results[sentence[i]] = [i] }
+    }
+    console.log(results)
+    return results;
+  }; 
+  assertArraysEqual(letterPositions("hello").e, [1]);
+  assertArraysEqual(letterPositions("hello").l, [2,3]);
+ // assertEqual( letterPositions("hello"),{
+   // h: [0],
+    //e: [1],
+    //l: [2,3],
+   // o: [4]
+//})
+
+
+//   //actual
+//   letterPositions("hello")
+
+//   //expected result
+//    {
+//        h: [0],
+//        e: [1],
+//        l: [2,3],
+//        o: [4]
+//    }
