@@ -1,5 +1,4 @@
-import {eqArrays} from "./eqArrays.mjs"
-
+let eqArrays = require("./eqArrays")
 let assertArraysEqual = function(actual, expected) {
 
   if (eqArrays(actual, expected)) {
@@ -18,6 +17,5 @@ let middle = function(arr) {
   let middleindex = Math.floor(arr.length / 2)
   return arr[middleindex]
 }
-console.log(middle([1,2,3]))
 
-export {middle, assertArraysEqual};
+module.exports= {middle, assertArraysEqual};

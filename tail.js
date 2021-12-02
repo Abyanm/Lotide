@@ -5,5 +5,11 @@ let assertEqual = function(value1, value2) {
     console.log(`🛑🛑🛑 Assertion Failed: ${value1} !== ${value2}`);
   }
 };
-let tail = ([6,8,4],9);
-assertEqual(tail);
+let tail = function(arr){
+  let lastIndex = arr.length-1
+  console.log(arr[lastIndex])
+  return arr[lastIndex]
+}
+
+module.exports = {assertEqual, tail};
+ 

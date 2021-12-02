@@ -30,14 +30,13 @@ const map = function(array, callback) {
   }
   return results
 }
-// test:
-const results1 = map(words, word => word[0]);
-console.log(results1); 
-const results2 = map(words, word => word.length);
-console.log(results2);
-const results3 = map(words, word => word);
-console.log(results3)
-
+// let map = function (array, callback) {
+//   let resultts = [] ;
+//   for (let item of array) {
+//     result.push(callback(item));
+//   }
+//   return results;
+// }
 
 
 

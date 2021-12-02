@@ -1,7 +1,8 @@
-const assertEqual = require('./assertEqual');
+const {assertEqual}= require('./assertEqual');
     // Prints the first element in the array
-  let head = function (array){
-
+  let head = function(arr){
+    return arr[0]
   }
 
-  assertEqual(head[3,5,7], 9)
+
+  module.exports = head;

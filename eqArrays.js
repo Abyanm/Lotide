@@ -28,4 +28,4 @@ let eqArrays = function(array1, array2) { // create a function that takes 2 arra
  
 
 //  assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
- export {eqArrays};
+ module.exports =  {eqArrays};

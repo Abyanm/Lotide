@@ -24,15 +24,13 @@ let eqArrays = function(array1, array2) { // create a function that takes 2 arra
      }
      return true // create another return if it doesnt follow the previous if statements
   }
-
-let words = ["hello", "world", "lighthouse"] 
-    for (let i = 0 ; i <word.length; i-- );
-console.log(words)
+ let without = function(array1, array2) {
+   let filteredArr = [];
+   for (let element of array1) {
+     if(!array2.includes(element)) {
+       filteredArr.push(element);
+     }
+   }
+   return filteredArr;
+ }
   
-  
-  
-  //Test Code
-const words = 
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);

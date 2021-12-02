@@ -6,7 +6,5 @@ let assertEqual = function(value1, value2) {
   }
 };
 
-module.exports = assertEqual;
 
-
-
+module.exports = {assertEqual}

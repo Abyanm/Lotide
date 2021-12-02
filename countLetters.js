@@ -20,4 +20,3 @@ const countLetters = function(letters){
 }  
 console.log(countLetters("asma"));
 
-module.exports = countLetters;

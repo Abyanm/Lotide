@@ -12,7 +12,7 @@ let eqArrays = function(array1, array2) { // create a function that takes 2 arra
      return true // create another return if it doesnt follow the previous if statements
   }
 
-  const assertArraysEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
 
     if (eqArrays(actual, expected)) {
       console.log("✅✅✅ Assertion Passed: " + actual + " === " + expected);
@@ -20,10 +20,9 @@ let eqArrays = function(array1, array2) { // create a function that takes 2 arra
       console.log("🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected);
     }
   
-  };
+};
    
   
-  
-  // TEST CODE
-  assertArraysEqual([1,2,3], [1,2,3]);
-  assertArraysEqual([1],[3]);
+
+   
+module.exports = {eqArrays, assertArraysEqual};

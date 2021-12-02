@@ -4,8 +4,9 @@ let assertEqual = function(value1, value2) {
     } else {
       console.log(`🛑🛑🛑 Assertion Failed: ${value1} !== ${value2}`);
     }
-  };
-  let eqObjects = function(object1, object2) {
+};
+
+let eqObjects = function(object1, object2) {
 
     // If object lengths are the same:
     if ((Object.keys(object1).length) === (Object.keys(object2).length)) {
@@ -47,4 +48,4 @@ let assertEqual = function(value1, value2) {
   console.log("assertEqual Test: ");
   assertEqual((eqObjects(ab, ba)), true); // => returns True. it works!
   
-  
+  module.exports = {eqObjects};
