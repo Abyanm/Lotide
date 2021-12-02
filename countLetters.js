@@ -6,11 +6,18 @@ let assertEqual = function(value1, value2) {
       }
     };
 const countLetters = function(letters){
-    const result = {}
-    for (letter of letters) {    // assigns the letters of the word to the variable.
-        console.log(letter)
-   //     if(letters[words) {
-     //   }
+    let result = {};
+    for (let letter of letters) {  
+      if (letter !== " ") {
+        if(result[letter])  {
+          result[letter] += 1;
+        } else {
+          result[letter] = 1 ;
+        }
+      } 
     }
+    return result;
 }  
-countLetters("Home")
+console.log(countLetters("asma"));
+
+module.exports = countLetters;
