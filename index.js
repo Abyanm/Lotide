@@ -15,7 +15,7 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-module.exports = {
+let obj = {
   head:   head,
   tail:   tail,
   middle: middle,
@@ -33,3 +33,4 @@ module.exports = {
   takeUntil: takeUntil,
   without: without
 };
+module.exports = {obj }
