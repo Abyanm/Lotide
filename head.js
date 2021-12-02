@@ -1,10 +1,4 @@
-let assertEqual = function(value1, value2) {
-    if (value1 === value2) {
-      console.log(`✅✅✅ Assertion Passed: ${value1} === ${value2}`);
-    } else {
-      console.log(`🛑🛑🛑 Assertion Failed: ${value1} !== ${value2}`);
-    }
-  };
+const assertEqual = require('./assertEqual');
     // Prints the first element in the array
   let head = function (array){
 

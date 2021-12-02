@@ -6,10 +6,7 @@ let assertEqual = function(value1, value2) {
   }
 };
 
-assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual("home", "house");
-assertEqual(4, 4);
-assertEqual(2,7);
+module.exports = assertEqual;
 
 
 
